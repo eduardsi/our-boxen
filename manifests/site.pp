@@ -75,6 +75,8 @@ node default {
   include ruby::1_9_3
   include ruby::2_0_0
 
+  include eduardsi
+
   # common, useful packages
   package {
     [
@@ -88,4 +90,5 @@ node default {
     ensure => link,
     target => $boxen::config::repodir
   }
+
 }

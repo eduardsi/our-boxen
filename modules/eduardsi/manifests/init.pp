@@ -2,6 +2,8 @@ class eduardsi {
 
 	$nodeVersion = 'v0.10'
 
+    class { 'nodejs::global': version => $nodeVersion }
+
     include eclipse::java
     include chrome
     include alfred
